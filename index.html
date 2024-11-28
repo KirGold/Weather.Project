@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./img/weather-app.png" /> 
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/weather-app.png"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/weather-app.png"> 
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/weather-app.png"> 
+    <link rel="manifest" href="./img/weather-app.png">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="overlay"></div>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav> 
+
+        <img class="icon" src="./img/weather-app.png" alt="#">
+    </header>
+    <main class="main">
+        <div class="main__title">
+            <h1 class="main__title-text">Discover your weather</h1>
+        </div>
+        <div class="input-button-container">
+            <input class="input" type="text" placeholder="Enter city name" aria-label="City name">
+            <button class="button" type="button"><span class="material-symbols-outlined">search</span></button>
+            
+        </div>
+        <div class="name_Country">
+            <img class="weather-icon" src="" alt="Weather Icon">
+            <h2 class="temperature"></h2>
+            <h2 class="country-name"></h2>
+        </div>
+
+        <div class="comment">
+            <input type="text" class="nickname-input" placeholder="Enter your nickname" />
+            <textarea class="comment-area" placeholder="Write your comment..." name="" id=""></textarea>
+            <button class="comment-send" type="button">Comment</button>
+        </div>
+        <div class="spinner" style="display: none;"></div>
+        
+        <div class="user-messages">
+            <div class="message"></div>
+        </div>
+        
+        <div class="other-messages">
+            <div class="other-comments-container"></div>
+        </div>
+        
+
+
+        <div class="fact-block">
+            <div class="fact-content">
+                <h1 class="fact-titel">Did You Know?</h1>
+                <p class="fact-text">About 40 Million Lightning Strikes Happen In The United States Each Year!</p>
+            </div>
+            <img class="fact-image" src="./img/lightning.jpg" alt="#">
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+    <div class="footer-content">
+    <div class="site-info">
+        <p>&copy;Weather. All rights reserved.</p>
+        <p>Designed with care for our users.</p>
+    </div>
+    <div class="contacts">
+        <p>Email: <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+    </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+<script src="./country.js"></script>
+<script src="./message.js"></script>
+</body>
+</html>
